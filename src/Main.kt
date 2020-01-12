@@ -1,5 +1,12 @@
 fun main() {
-    val names = arrayOf("Jim", "John", "Jenny", "Jay", "Samantha")
+    var number = 100
+    var i = 0
 
-    for (name in names.indices) println("Index: $name Element: ${names[name]}")
+    while (number > 1) {
+        println("$number / 2 = ${number / 2}")
+        number /= 2
+        i++
+    }
+
+    println("It takes $i times")
 }
